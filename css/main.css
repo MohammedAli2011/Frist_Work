@@ -103,6 +103,24 @@ a {
     padding: 9px;
 }
 
+.account-collapse {
+    right: 30px !important;
+    width: 140px;
+}
+
+.account-collapse .card li a {
+    color: var(--bs-dark);
+}
+
+.account-collapse .card li:hover {
+    background-color: var(--bg-color);
+}
+
+.account-collapse .card li:hover a {
+    color: var(--main-color);
+    text-decoration: underline !important;
+}
+
 .navbar .icons-container .icon-heart {
     padding: 7px 11px;
 }
