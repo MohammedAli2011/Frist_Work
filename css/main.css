@@ -1,5 +1,6 @@
 * {
     --main-color: #f2a100;
+    --bg-color: #0000000a;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
     font-family: "cairo", sans-serif !important;
     margin: 0 !important;
     padding: 0 !important;
-    height: 100000000pc;
+    height: 9000px;
     background: #000;
 }
 
@@ -17,7 +18,7 @@ a {
 }
 
 .active {
-    background-color: #0000000a !important;
+    background-color: var(--bg-color) !important;
     position: relative !important;
 }
 
@@ -28,6 +29,12 @@ a {
     height: 4px;
     bottom: 0;
     left: 0;
+}
+
+.navbar {
+    transform: translateX(-50%);
+    left: 50%;
+    width: max-content;
 }
 
 .navbar .navbar-brand {
@@ -47,13 +54,64 @@ a {
 }
 
 .navbar .navbar-collapse .nav-link:hover {
-    background-color: #0000000a !important;
+    background-color: var(--bg-color) !important;
 }
 
 .navbar .navbar-collapse .nav-link::before {
     background-color: var(--main-color);
 }
 
+.navbar .icons-container .icon-search {
+    padding: 7px 11px;
+}
+
+.navbar .icons-container .search-collapse {
+    right: 195px;
+}
+
+.navbar .icons-container .search-bar {
+    padding: 12px;
+    width: 300px;
+    border: 2px solid var(--main-color);
+}
+
+.navbar .icons-container .search-bar:focus {
+    border: 2px solid var(--main-color);
+    outline: 0;
+}
+
+.navbar .icons-container .search-bar:hover {
+    background-color: var(--bg-color);
+}
+
+.navbar .icons-container .search-bar-link {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    padding: 0;
+    padding: 13px 10px;
+    border: 0;
+    border-left: 1px solid var(--main-color);
+}
+
+.navbar .icons-container .search-bar-link:hover {
+    background-color: var(--bg-color);
+    color: var(--main-color) !important;
+}
+
+.navbar .icons-container .icon-account {
+    padding: 9px;
+}
+
+.navbar .icons-container .icon-heart {
+    padding: 7px 11px;
+}
+
+.navbar .icons-container .icon-shop {
+    padding: 7px 12px;
+}
+
 .navbar .icons-container .icon:hover {
-    background-color: #0000001f !important;
+    background-color: var(--bg-color) !important;
+    color: var(--main-color) !important;
 }

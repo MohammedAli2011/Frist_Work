@@ -23,7 +23,7 @@
 
 <body>
     <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg bg-white p-0 navbar-fluid">
+    <nav class="navbar navbar-expand-lg bg-white p-0 position-fixed shadow-lg">
         <div class="container">
             <a class="navbar-brand" href="#"><img class="img-fluid" src="img/assets/images/logo.png" alt=""></a>
 
@@ -56,7 +56,45 @@
                 </ul>
             </div>
 
+            <div class="icons-container d-flex align-items-center p-2">
+                <!-- icon -->
+                <p class="position-relative d-flex align-items-center p-2 m-0">
+                    <a class="btn icon icon-search border border-dark" data-bs-toggle="collapse" href="#search"
+                        role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa-solid fa-search"></i>
+                    </a>
+                </p>
+                <div class="collapse search-collapse position-absolute top-100" id="search">
+                    <div class="card card-body position-relative">
+                        <input class="search-bar rounded" type="text" name="search-bar" placeholder="search" id="">
+                        <a class="search-bar-link position-absolute text-dark" href=""><i
+                                class="fa-solid fa-search"></i></a>
 
+                    </div>
+                </div>
+                <!-- icon -->
+                <p class="position-relative d-flex align-items-center p-2 m-0">
+                    <a class="btn icon icon-account border border-dark d-flex align-items-center"
+                        data-bs-toggle="collapse" href="#account" role="button" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <i class="fa-regular fa-user-circle fs-5"></i>
+                    </a>
+                </p>
+                <div class="collapse position-absolute top-100 end-0" id="account">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but
+
+                    </div>
+                </div>
+                <!-- icon -->
+                <p class=" d-flex align-items-center m-0 border border-dark m-2 rounded"><a
+                        class="text-dark icon icon-heart" href="#"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <!-- icon -->
+                <p class=" d-flex align-items-center m-0 border border-dark m-2 rounded"><a
+                        class="text-dark icon icon-shop" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                </p>
+            </div>
         </div>
     </nav>
 
