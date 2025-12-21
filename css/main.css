@@ -166,15 +166,9 @@ a {
 
 .item .title {
     font-size: 90px;
-    padding-left: 90px;
-}
-
-.item .pragraph {
-    padding-left: 145px;
 }
 
 .item .btn-purchase {
-    margin-left: -200px;
     padding: 15px;
     border: 0 !important;
 }
