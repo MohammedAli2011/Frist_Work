@@ -1,6 +1,8 @@
 * {
     --main-color: #f2a100;
     --bg-color: #0000000a;
+    --secondary-color: #f2a10054;
+    --btnHover-color: #494949;
 }
 
 body {
@@ -153,11 +155,35 @@ a {
 }
 
 .landing .arrow:hover {
-    background-color: #0000001a;
+    background-color: var(--secondary-color);
     cursor: pointer;
 }
 
 .landing .arrow:hover .right-arrow,
 .landing .arrow:hover .left-arrow {
     color: #000;
+}
+
+.item .title {
+    font-size: 90px;
+    padding-left: 90px;
+}
+
+.item .pragraph {
+    padding-left: 145px;
+}
+
+.item .btn-purchase {
+    margin-left: -200px;
+    padding: 15px;
+    border: 0 !important;
+}
+
+.item .btn-purchase:hover {
+    color: #fff;
+}
+
+.item .btn-purchase::before {
+    background-color: var(--btnHover-color);
+    border-radius: 5px;
 }

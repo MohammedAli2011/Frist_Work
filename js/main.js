@@ -129,3 +129,6 @@ document.getElementsByClassName("search-bar")[0].addEventListener("keyup", () =>
 
 //#endregion
 
+// #region landing
+    
+// #endregion
