@@ -40,7 +40,7 @@ a {
     text-decoration: underline !important;
 }
 
-/* start navbar */
+/* #region navbar */
 
 .navbar {
     transform: translateX(-50%);
@@ -145,4 +145,19 @@ a {
     color: var(--main-color) !important;
 }
 
+/* #endregion */
+
 /* start landing */
+.landing {
+    background-color: #eee5ff;
+}
+
+.landing .arrow:hover {
+    background-color: #0000001a;
+    cursor: pointer;
+}
+
+.landing .arrow:hover .right-arrow,
+.landing .arrow:hover .left-arrow {
+    color: #000;
+}
