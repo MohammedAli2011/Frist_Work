@@ -31,6 +31,17 @@ a {
     left: 0;
 }
 
+.account-collapse .card .active-li {
+    background-color: var(--bg-color) !important;
+}
+
+.account-collapse .card .active-li a {
+    color: var(--main-color) !important;
+    text-decoration: underline !important;
+}
+
+/* start navbar */
+
 .navbar {
     transform: translateX(-50%);
     left: 50%;
@@ -133,3 +144,5 @@ a {
     background-color: var(--bg-color) !important;
     color: var(--main-color) !important;
 }
+
+/* start landing */
