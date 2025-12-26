@@ -168,13 +168,17 @@ a {
     font-size: 90px;
 }
 
+.item .left-side button {
+    border: var(--btnHover-color);
+}
+
 .item .btn-purchase {
     padding: 15px;
     border: 0 !important;
 }
 
 .item .btn-purchase:hover {
-    color: #fff;
+    color: #fff !important;
 }
 
 .item .btn-purchase::before {

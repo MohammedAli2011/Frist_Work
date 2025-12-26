@@ -89,46 +89,84 @@ links.forEach((e) => {
     if (window.location.href === e.href) {
         e.classList.remove("hvr-underline-from-center");
         e.classList.add("active");
-    }
+    };
 });
 
 links2.forEach((e) => {
     if (window.location.href === e.href) {
-        e.style.background = "var(--bg-color) !important"
-        e.style.color = "var(--main-color) !important"
+        e.style.background = "var(--bg-color) !important";
+        e.style.color = "var(--main-color) !important";
         if (e.innerHTML === "My Account" || e.innerHTML === "Sign In" || e.innerHTML === "Check Out") {
-            document.getElementsByClassName("icon-account")[0].style.background = "var(--bg-color) !important"
-            document.getElementsByClassName("icon-account")[0].style.color = "var(--main-color) !important"
-        }
-    }
+            document.getElementsByClassName("icon-account")[0].style.background = "var(--bg-color) !important";
+            document.getElementsByClassName("icon-account")[0].style.color = "var(--main-color) !important";
+        };
+    };
 });
 
 //search bar
 
 document.getElementsByClassName("card")[0].addEventListener("mouseover", () => {
-    document.getElementsByClassName("icon-search")[0].style.background = "var(--bg-color) !important"
-    document.getElementsByClassName("icon-search")[0].style.color = "var(--main-color) !important"
-})
+    document.getElementsByClassName("icon-search")[0].style.background = "var(--bg-color) !important";
+    document.getElementsByClassName("icon-search")[0].style.color = "var(--main-color) !important";
+});
 
 document.getElementsByClassName("card")[0].addEventListener("mouseout", () => {
-    document.getElementsByClassName("icon-search")[0].style.background = "#fff"
-    document.getElementsByClassName("icon-search")[0].style.color = "var(--bs-dark)"
-})
+    document.getElementsByClassName("icon-search")[0].style.background = "#fff";
+    document.getElementsByClassName("icon-search")[0].style.color = "var(--bs-dark)";
+});
 
 document.getElementsByClassName("search-bar")[0].addEventListener("click", () => {
-    document.getElementsByClassName("icon-search")[0].style.background = "var(--bg-color) !important"
-    document.getElementsByClassName("icon-search")[0].style.color = "var(--main-color) !important"
-})
+    document.getElementsByClassName("icon-search")[0].style.background = "var(--bg-color) !important";
+    document.getElementsByClassName("icon-search")[0].style.color = "var(--main-color) !important";
+});
 
 document.getElementsByClassName("search-bar")[0].addEventListener("keyup", () => {
-    document.getElementsByClassName("icon-search")[0].style.background = "var(--bg-color) !important"
-    document.getElementsByClassName("icon-search")[0].style.color = "var(--main-color) !important"
-})
+    document.getElementsByClassName("icon-search")[0].style.background = "var(--bg-color) !important";
+    document.getElementsByClassName("icon-search")[0].style.color = "var(--main-color) !important";
+});
 
 //#endregion
 
 //#endregion
 
 // #region landing
-    
-// #endregion
+let leftArrow = document.getElementsByClassName("arrow-left")[0];
+let rightArrow = document.getElementsByClassName("arrow-right")[0];
+let landingItems = document.querySelectorAll(".landing .container .item")
+let n = 0;
+
+function slider() {
+    for (let i = 0; i < landingItems.length; i++) {
+        landingItems[i].classList.remove("d-flex")
+        landingItems[i].classList.add("d-none")
+    }
+}
+
+slider();
+landingItems[n].classList.remove("d-none")
+landingItems[n].classList.add("d-flex")
+
+leftArrow.addEventListener("click", () => {
+    if (n > 0) {
+        n--
+    } else {
+        n = landingItems.length - 1
+    }
+    slider();
+    landingItems[n].classList.remove("d-none")
+    landingItems[n].classList.add("d-flex")
+});
+
+rightArrow.addEventListener("click", () => {
+    if (n === landingItems.length - 1) {
+        n = 0
+    } else {
+        n++
+    }
+
+    slider();
+    landingItems[n].classList.remove("d-none")
+    landingItems[n].classList.add("d-flex")
+
+});
+//#endregion
