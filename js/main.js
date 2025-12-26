@@ -26,7 +26,7 @@ let navbar = `    <!-- start navbar -->
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-center" href="faq.html">Faq</a>
+                        <a class="nav-link hvr-underline-from-center" href="help.html">Help</a>
                     </li>
 
                     <li class="nav-item">
@@ -170,3 +170,8 @@ rightArrow.addEventListener("click", () => {
 
 });
 //#endregion
+
+// #region categories
+
+
+// #endregion

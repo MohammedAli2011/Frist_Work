@@ -1,8 +1,12 @@
 * {
     --main-color: #f2a100;
+    --secondery-color: #999999;
+    --arrows-color: #f2a10054;
+    --border-color: #e3e3e3;
     --bg-color: #0000000a;
-    --secondary-color: #f2a10054;
-    --btnHover-color: #494949;
+    --secondary-bg-color: #fafafa;
+    --elHover-bg: #494949;
+
 }
 
 body {
@@ -149,13 +153,13 @@ a {
 
 /* #endregion */
 
-/* start landing */
+/* #region landing */
 .landing {
     background-color: #eee5ff;
 }
 
 .landing .arrow:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--arrows-color);
     cursor: pointer;
 }
 
@@ -169,7 +173,7 @@ a {
 }
 
 .item .left-side button {
-    border: var(--btnHover-color);
+    border: var(--elHover-bg);
 }
 
 .item .btn-purchase {
@@ -182,6 +186,39 @@ a {
 }
 
 .item .btn-purchase::before {
-    background-color: var(--btnHover-color);
+    background-color: var(--elHover-bg);
     border-radius: 5px;
 }
+
+/* #endregion */
+
+/* #region categories */
+.categories {
+    background-color: var(--secondary-bg-color);
+}
+
+.categories .category {
+    border-color: var(--border-color) !important;
+}
+
+.categories .category:before {
+    background-color: var(--bg-color);
+    transition: 0.6s ease-in-out all !important;
+}
+
+.categories .category .img {
+    width: 130px;
+    height: 130px;
+    color: var(--secondery-color);
+    transition: all 0.6s ease-in-out;
+}
+
+.categories .category:hover .img {
+    transform: rotate(360deg);
+}
+
+.categories .category h1 {
+    font-size: 60px;
+}
+
+/* #endregion */
