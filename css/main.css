@@ -172,7 +172,7 @@ a {
     font-size: 90px;
 }
 
-.item .left-side button {
+.item .left-side .btn {
     border: var(--elHover-bg);
 }
 
@@ -203,14 +203,14 @@ a {
 
 .categories .category:before {
     background-color: var(--bg-color);
-    transition: 0.6s ease-in-out all !important;
+    transition: 0.5s ease-in-out all !important;
 }
 
 .categories .category .img {
     width: 130px;
     height: 130px;
     color: var(--secondery-color);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .categories .category:hover .img {
@@ -219,6 +219,17 @@ a {
 
 .categories .category h1 {
     font-size: 60px;
+}
+
+/* #endregion */
+
+/* #region our-features */
+.our-features .container .features-box .card {
+    transition: all 1s ease-in-out;
+}
+
+.our-features .container .features-box .card:before {
+    background-color: var(--bg-color);
 }
 
 /* #endregion */
