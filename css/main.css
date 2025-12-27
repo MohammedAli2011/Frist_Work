@@ -45,9 +45,7 @@ a {
     color: var(--main-color) !important;
     text-decoration: underline !important;
 }
-
 /* #region navbar */
-
 .navbar {
     transform: translateX(-50%);
     left: 50%;
@@ -150,8 +148,7 @@ a {
     background-color: var(--bg-color) !important;
     color: var(--main-color) !important;
 }
-
-/* #endregion */
+/* #endregion navbar */
 
 /* #region landing */
 .landing {
@@ -189,39 +186,43 @@ a {
     background-color: var(--elHover-bg);
     border-radius: 5px;
 }
+/* #endregion landing */
 
-/* #endregion */
-
-/* #region categories */
-.categories {
+/* #region categories & brands */
+.categories,
+.brands {
     background-color: var(--secondary-bg-color);
 }
 
-.categories .category {
+.categories .category, 
+.brands .brand {
     border-color: var(--border-color) !important;
 }
 
-.categories .category:before {
+.categories .category:before,
+.brands .brand:before {
     background-color: var(--bg-color);
     transition: 0.5s ease-in-out all !important;
 }
 
-.categories .category .img {
+.categories .category .img,
+.brands .brand .img {
     width: 130px;
     height: 130px;
     color: var(--secondery-color);
     transition: all 0.5s ease-in-out;
 }
 
-.categories .category:hover .img {
+.categories .category:hover .img,
+.brands .brand:hover .img {
     transform: rotate(360deg);
 }
 
-.categories .category h1 {
+.categories .category h1,
+.brands .brand h1 {
     font-size: 60px;
 }
-
-/* #endregion */
+/* #endregion categories & brands */
 
 /* #region our-features */
 .our-features .container .features-box .card {
@@ -231,5 +232,4 @@ a {
 .our-features .container .features-box .card:before {
     background-color: var(--bg-color);
 }
-
-/* #endregion */
+/* #endregion our-features */
