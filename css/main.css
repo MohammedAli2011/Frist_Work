@@ -45,6 +45,7 @@ a {
     color: var(--main-color) !important;
     text-decoration: underline !important;
 }
+
 /* #region navbar */
 .navbar {
     transform: translateX(-50%);
@@ -148,6 +149,7 @@ a {
     background-color: var(--bg-color) !important;
     color: var(--main-color) !important;
 }
+
 /* #endregion navbar */
 
 /* #region landing */
@@ -186,6 +188,7 @@ a {
     background-color: var(--elHover-bg);
     border-radius: 5px;
 }
+
 /* #endregion landing */
 
 /* #region categories & brands */
@@ -194,7 +197,7 @@ a {
     background-color: var(--secondary-bg-color);
 }
 
-.categories .category, 
+.categories .category,
 .brands .brand {
     border-color: var(--border-color) !important;
 }
@@ -222,6 +225,7 @@ a {
 .brands .brand h1 {
     font-size: 60px;
 }
+
 /* #endregion categories & brands */
 
 /* #region our-features */
@@ -232,4 +236,16 @@ a {
 .our-features .container .features-box .card:before {
     background-color: var(--bg-color);
 }
+
+/* #endregion our-features */
+
+/* #region new products */
+.our-features .container .features-box .card {
+    transition: all 1s ease-in-out;
+}
+
+.our-features .container .features-box .card:before {
+    background-color: var(--bg-color);
+}
+
 /* #endregion our-features */

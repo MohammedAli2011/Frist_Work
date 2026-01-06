@@ -125,6 +125,23 @@ document.getElementsByClassName("search-bar")[0].addEventListener("keyup", () =>
     document.getElementsByClassName("icon-search")[0].style.color = "var(--main-color) !important";
 });
 
+//account icon links
+
+document.getElementsByClassName("card")[1].addEventListener("mouseover", () => {
+    document.getElementsByClassName("icon-account")[0].style.background = "var(--bg-color) !important";
+    document.getElementsByClassName("icon-account")[0].style.color = "var(--main-color) !important";
+});
+
+document.getElementsByClassName("card")[1].addEventListener("mouseout", () => {
+    document.getElementsByClassName("icon-account")[0].style.background = "#fff";
+    document.getElementsByClassName("icon-account")[0].style.color = "var(--bs-dark)";
+});
+
+document.getElementsByClassName("collapse-account")[0].addEventListener("click", () => {
+    document.getElementsByClassName("icon-account")[0].style.background = "var(--bg-color) !important";
+    document.getElementsByClassName("icon-account")[0].style.color = "var(--main-color) !important";
+});
+
 //#endregion
 
 //#endregion
