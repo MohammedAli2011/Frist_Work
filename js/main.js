@@ -137,7 +137,7 @@ document.getElementsByClassName("card")[1].addEventListener("mouseout", () => {
     document.getElementsByClassName("icon-account")[0].style.color = "var(--bs-dark)";
 });
 
-document.getElementsByClassName("collapse-account")[0].addEventListener("click", () => {
+document.getElementsByClassName("account-collapse")[0].addEventListener("click", () => {
     document.getElementsByClassName("icon-account")[0].style.background = "var(--bg-color) !important";
     document.getElementsByClassName("icon-account")[0].style.color = "var(--main-color) !important";
 });
