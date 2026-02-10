@@ -144,9 +144,10 @@ document.getElementsByClassName("account-collapse")[0].addEventListener("click",
 
 //#endregion
 
-//#endregion
+//#endregion navbar
 
 // #region landing
+
 let leftArrow = document.getElementsByClassName("arrow-left")[0];
 let rightArrow = document.getElementsByClassName("arrow-right")[0];
 let landingItems = document.querySelectorAll(".landing .container .item")
@@ -186,9 +187,52 @@ rightArrow.addEventListener("click", () => {
     landingItems[n].classList.add("d-flex")
 
 });
-//#endregion
 
-// #region categories
+//#endregion landing
 
+// #region new collections
 
-// #endregion
+let daysInp = document.getElementsByClassName("days")[0];
+let hoursInp = document.getElementsByClassName("hours")[0];
+let minutesInp = document.getElementsByClassName("minutes")[0];
+let secondsInp = document.getElementsByClassName("seconds")[0];
+let time = new Date("Dec 31, 2026 23:59:59").getTime();
+
+setInterval(() => {
+    let timeNow = new Date();
+    let timeDef = time - timeNow;
+
+    // days
+    let days = Math.floor((timeDef / (1000 * 60 * 60 * 24)));
+    daysInp.innerHTML = days < 10 ? `0${days}` : days;
+    // hours
+    let hours = Math.floor((timeDef % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    hoursInp.innerHTML = hours < 10 ? `0${hours}` : hours;
+    //minutes
+    let minutes = Math.floor((timeDef % (1000 * 60 * 60)) / (1000 * 60));
+    minutesInp.innerHTML = minutes < 10 ? `0${minutes}` : minutes;
+    //seconds
+    let seconds = Math.floor((timeDef % (1000 * 60)) / (1000));
+    secondsInp.innerHTML = seconds < 10 ? `0${seconds}` : seconds;
+    
+    // conditions
+    // style condition
+    if (daysInp.innerHTML === "00") {
+
+        daysInp.classList.add("text-danger");
+
+    }else if (hoursInp.innerHTML === "00") {
+
+        hoursInp.classList.add("text-danger");
+
+    }else if (minutesInp.innerHTML === "00") {
+
+        minutesInp.classList.add("text-danger");
+
+    }
+    // clear interval condition
+    if (timeDef === 0) {
+        clearInterval();
+    };
+}, 1000);
+// #endregion new collections
