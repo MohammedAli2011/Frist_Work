@@ -1,7 +1,7 @@
 // #region navbar
 
 let navbar = `    <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg bg-white p-0 position-fixed shadow-lg z-3">
+    <nav class="navbar navbar-expand-lg p-0 position-fixed shadow-lg z-3">
         <div class="container">
             <a class="navbar-brand" href="#" title="logo"><img class="img-fluid" src="img/assets/images/logo.png"
                     alt=""></a>
@@ -68,11 +68,11 @@ let navbar = `    <!-- start navbar -->
                 </div>
                 <!-- icon -->
                 <p class=" d-flex align-items-center m-0 border border-dark m-2 rounded">
-                    <a class="text-dark icon icon-heart" href="wish_list.html"><i class="fa-regular fa-heart"></i></a>
+                    <a class="text-dark icon icon-heart rounded" href="wish_list.html"><i class="fa-regular fa-heart"></i></a>
                 </p>
                 <!-- icon -->
                 <p class=" d-flex align-items-center m-0 border border-dark m-2 rounded">
-                    <a class="text-dark icon icon-shop" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a class="text-dark icon icon-shop rounded" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
                 </p>
             </div>
         </div>
@@ -214,20 +214,28 @@ setInterval(() => {
     //seconds
     let seconds = Math.floor((timeDef % (1000 * 60)) / (1000));
     secondsInp.innerHTML = seconds < 10 ? `0${seconds}` : seconds;
-    
+
     // conditions
     // style condition
     if (daysInp.innerHTML === "00") {
 
         daysInp.classList.add("text-danger");
 
-    }else if (hoursInp.innerHTML === "00") {
+    } else if (hoursInp.innerHTML === "00") {
 
         hoursInp.classList.add("text-danger");
 
-    }else if (minutesInp.innerHTML === "00") {
+    } else if (minutesInp.innerHTML === "00") {
 
         minutesInp.classList.add("text-danger");
+
+    } else {
+
+        minutesInp.classList.remove("text-danger");
+
+        daysInp.classList.remove("text-danger");
+
+        hoursInp.classList.remove("text-danger");
 
     }
     // clear interval condition
@@ -235,4 +243,12 @@ setInterval(() => {
         clearInterval();
     };
 }, 1000);
+
 // #endregion new collections
+
+// #endregion new collections
+
+let ddd = document.getElementsByClassName("product");
+
+document.getElementsByClassName("products-box")[1].removeChild(ddd[0])
+document.getElementsByClassName("products-box")[1].prepend(ddd[0])

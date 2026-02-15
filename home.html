@@ -12,7 +12,7 @@
     <!-- fontAwesome link -->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- animateLibrary link -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.compat.css">
     <!-- hoverLibrary link -->
     <link rel="stylesheet" href="css/hover-min.css">
     <!-- bootstrap link -->
@@ -557,10 +557,10 @@
     <!--#endregion new products  -->
 
     <!--#region new collections -->
-    <div class="new-collection ">
+    <div class="new-collection overflow-hidden">
         <div class="container">
-            <div class="collection-box p-5 d-flex justify-content-between ps-5">
-                <div class="left-side">
+            <div class="collection-box p-5 pb-0 d-flex justify-content-between">
+                <div class="left-side w-50 d-flex justify-content-center align-items-center flex-column mb-5">
                     <div class="text">
                         <h2
                             class="title d-flex justify-content-center align-items-center fs-1 text-dark mx-0 mb-5 fw-bold">
@@ -578,22 +578,30 @@
                     <div class="count-down w-100 d-flex align-items-center justify-content-center fs-1 fw-bold my-5">
                         <div class="position-relative">
                             <span class="days px-4 position-relative"></span>
-                            <p class="position-absolute fs-5 bottom-50 w-100 d-flex justify-content-center align-items-center">Days</p>
+                            <p
+                                class="position-absolute fs-5 bottom-50 w-100 d-flex justify-content-center align-items-center">
+                                Days</p>
                         </div>
                         :
                         <div class="position-relative">
                             <span class="hours px-4 position-relative"></span>
-                            <p class="position-absolute fs-5 bottom-50 w-100 d-flex justify-content-center align-items-center">Hours</p>
+                            <p
+                                class="position-absolute fs-5 bottom-50 w-100 d-flex justify-content-center align-items-center">
+                                Hours</p>
                         </div>
                         :
                         <div class="position-relative">
                             <span class="minutes px-4 position-relative"></span>
-                            <p class="position-absolute fs-5 bottom-50 w-100 d-flex justify-content-center align-items-center">Minutes</p>
+                            <p
+                                class="position-absolute fs-5 bottom-50 w-100 d-flex justify-content-center align-items-center">
+                                Minutes</p>
                         </div>
                         :
                         <div class="position-relative">
                             <span class="seconds px-4 position-relative text-danger"></span>
-                            <p class="position-absolute fs-5 bottom-50 w-100 d-flex justify-content-center align-items-center">Seconds</p>
+                            <p
+                                class="position-absolute fs-5 bottom-50 w-100 d-flex justify-content-center align-items-center">
+                                Seconds</p>
                         </div>
                     </div>
                     <!--  -->
@@ -602,11 +610,159 @@
                             Now</button>
                     </div>
                 </div>
-                <div class="right-side"> <img src="img/assets/images/banner/banner-06.jpg" alt=""></div>
+                <!--  -->
+                <div class="right-side d-flex align-items-center justify-content-center position-relative">
+                    <img class=" mb-5" src="img/assets/images/countdown.png" alt="">
+
+                    <div class="circles">
+                        <div class="position-absolute rounded-circle bg-warning bottom-25 circle-top"></div>
+                        <div class="position-absolute rounded-circle circle-middle bg-dark">
+                            <i class="fa-regular fa-face-grin-wink fa-2x text-white"></i>
+                        </div>
+                        <div class="position-absolute rounded-circle bg-danger circle-bottom"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!--#endregion new collections  -->
+
+    <!--#region featured products  -->
+    <div class="featured-products bg-white">
+
+        <div class="container">
+
+            <h1 class="pt-5 ps-5 pt-3">Featured Products:</h1>
+
+            <div class="content d-flex position-relative">
+                <div class="products-box h-100 w-100 d-flex justify-content-between align-items-center flex-wrap p-5 z-1">
+
+                    <div class="product border rounded mb-3">
+
+                        <div class="product-content p-0 rounded bg-transparent overflow-hidden">
+
+                            <div
+                                class="img d-flex align-items-center justify-content-center p-0 m-0 rounded overflow-hidden position-relative">
+
+                                <a href="the same link" class="">
+                                    <img class="img-fluid rounded w-100" src="img/assets/images/product/product-08.jpg"
+                                        alt="alternate">
+                                </a>
+
+                            </div>
+
+                            <a class="description w-100 d-flex flex-wrap justify-content-center align-items-center p-3 text-dark"
+                                href="the same link">
+
+                                <h5 class="w-100 d-flex justify-content-center">Elona bedside grey table</h5>
+                                <p class="fs-5 mt-1">$40.00</p>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!--  -->
+
+                    <div class="product border rounded mb-3">
+
+                        <div class="product-content p-0 rounded bg-transparent overflow-hidden">
+
+                            <div
+                                class="img d-flex align-items-center justify-content-center p-0 m-0 rounded overflow-hidden position-relative">
+
+                                <a href="the same link" class="">
+                                    <img class="img-fluid rounded w-100" src="img/assets/images/product/product-09.jpg"
+                                        alt="alternate">
+                                </a>
+
+                            </div>
+
+                            <a class="description w-100 d-flex flex-wrap justify-content-center align-items-center p-3 text-dark"
+                                href="the same link">
+
+                                <h5 class="w-100 d-flex justify-content-center">Simple minimal Chair</h5>
+                                <p class="fs-5 mt-1">$20.00</p>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!--  -->
+
+                    <div class="product border rounded mb-3">
+
+                        <div class="product-content p-0 rounded bg-transparent overflow-hidden">
+
+                            <div
+                                class="img d-flex align-items-center justify-content-center p-0 m-0 rounded overflow-hidden position-relative">
+
+                                <a href="the same link" class="">
+                                    <img class="img-fluid rounded w-100" src="img/assets/images/product/product-11.jpg"
+                                        alt="alternate">
+                                </a>
+
+                            </div>
+                            <a class="description w-100 d-flex flex-wrap justify-content-center align-items-center p-3 text-dark"
+                                href="the same link">
+
+                                <h5 class="w-100 d-flex justify-content-center">Pendant Chandelier Light</h5>
+                                <p class="fs-5 mt-1">$40.00</p>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!--  -->
+
+                    <div class="product border rounded mb-3">
+
+                        <div class="product-content p-0 rounded bg-transparent overflow-hidden">
+
+                            <div
+                                class="img d-flex align-items-center justify-content-center p-0 m-0 rounded overflow-hidden position-relative">
+
+                                <a href="the same link" class="">
+                                    <img class="img-fluid rounded w-100" src="img/assets/images/product/product-12.jpg"
+                                        alt="alternate">
+                                </a>
+
+                            </div>
+
+                            <a class="description w-100 d-flex flex-wrap justify-content-center align-items-center p-3 text-dark"
+                                href="the same link">
+
+                                <h5 class="w-100 d-flex justify-content-center">High quality vase bottle</h5>
+                                <p class="fs-5 mt-1">$20.00</p>
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="arrows position-absolute w-100 h-100 d-flex align-items-center justify-content-between">
+
+                    <div class="left-arrow hvr-rectangle-out bg-white border p-2 z-1">
+                        <i class="fa fa-angle-left fa-2x"></i>
+                    </div>
+                    
+                    <!--  -->
+
+                    <div class="right-arrow hvr-rectangle-out bg-white border p-2 z-1">
+                        <i class="fa fa-angle-right fa-2x"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#endregion featured products -->
 
     <script src="js/all.min.js"></script>
     <script src="js/wow.min.js"></script>

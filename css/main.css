@@ -39,20 +39,16 @@ a {
     left: 0;
 }
 
-.account-collapse .card .active-li {
-    background-color: var(--bg-color) !important;
-}
-
-.account-collapse .card .active-li a {
-    color: var(--main-color) !important;
-    text-decoration: underline !important;
-}
-
 /* #region navbar */
 .navbar {
     transform: translateX(-50%);
     left: 50%;
     width: max-content;
+    transition: var(--main-transition) all ease-in-out;
+}
+
+.navbar:hover {
+    background-color: #fff;
 }
 
 .navbar .navbar-brand {
@@ -63,12 +59,15 @@ a {
     flex-grow: 0 !important;
 }
 
+/* navbar links */
+
 .navbar .navbar-collapse .nav-item:not(:nth-of-type(1)) {
-    border-left: 1px solid #fff;
+    border-left: 1px solid transparent;
 }
 
 .navbar .navbar-collapse .nav-link {
     padding: 25px;
+    transition: var(--main-transition) all ease-in-out;
 }
 
 .navbar .navbar-collapse .nav-link:hover {
@@ -78,6 +77,8 @@ a {
 .navbar .navbar-collapse .nav-link::before {
     background-color: var(--main-color);
 }
+
+/* navbar icons */
 
 .navbar .icons-container .icon-search {
     padding: 7px 11px;
@@ -110,6 +111,7 @@ a {
     padding: 13px 10px;
     border: 0;
     border-left: 1px solid var(--main-color);
+    transition: var(--main-transition);
 }
 
 .navbar .icons-container .search-bar-link:hover {
@@ -124,6 +126,15 @@ a {
 .account-collapse {
     right: 30px !important;
     width: 140px;
+}
+
+.account-collapse .card .active-li {
+    background-color: var(--bg-color) !important;
+}
+
+.account-collapse .card .active-li a {
+    color: var(--main-color) !important;
+    text-decoration: underline !important;
 }
 
 .account-collapse .card li a {
@@ -324,6 +335,8 @@ a {
     background-color: var(--secondary-bg-color);
 }
 
+/* #region left side */
+
 .new-collection .text .title .off-value {
     color: var(--main-color);
     margin-left: 10px;
@@ -338,11 +351,11 @@ a {
     color: var(--main-color);
 }
 
-.new-collection .count-down  span {
+.new-collection .count-down span {
     color: var(--bs-dark);
 }
 
-.new-collection .count-down  span::before {
+.new-collection .count-down span::before {
     content: "";
 }
 
@@ -358,4 +371,86 @@ a {
     border-radius: 5px;
 }
 
+/* #endregion left side */
+
+/* #region right side */
+
+.new-collection .right-side img {
+    z-index: 1;
+}
+
+.new-collection .right-side .circles .circle-top {
+    padding: 165px;
+    left: -60px;
+    bottom: 35%;
+}
+
+.new-collection .right-side .circles .circle-bottom {
+    padding: 165px;
+    right: 60px;
+    top: 50%;
+}
+
+.new-collection .right-side .circles .circle-middle {
+    padding: 50px;
+    left: 30px;
+    top: 5%;
+}
+
+/* #endregion right side */
+
 /* #endregion new collection */
+
+/* #region featured products */
+.featured-products .product {
+    width: 290px;
+    left: -15px;
+    border-color: var(--border-color);
+}
+
+.featured-products .product .product-content .img {
+    background-color: var(--third-bg-color) !important;
+}
+
+.featured-products .product .product-content .img img {
+    transition: var(--main-transition) ease all !important;
+}
+
+.featured-products .product .product-content:hover .img img {
+    transform: scale(1.2) rotate(12deg) !important;
+}
+
+.featured-products .product .product-content .description h5 {
+    transition: var(--main-transition) ease all !important;
+}
+
+.featured-products .product .product-content:hover .description h5 {
+    color: var(--main-color);
+}
+
+.featured-products .product .product-content .description p {
+    color: var(--main-color) !important;
+    transition: var(--main-transition) ease all !important;
+}
+
+.featured-products .product .product-content:hover .description p {
+    color: var(--bs-dark);
+}
+
+.featured-products .arrows .left-arrow,
+.featured-products .arrows .right-arrow {
+    cursor: pointer;
+    transition: var(--main-transition) all ease-in-out;
+}
+
+.featured-products .arrows .left-arrow:hover,
+.featured-products .arrows .right-arrow:hover {
+    color: #fff;
+}
+
+.featured-products .arrows .left-arrow::before,
+.featured-products .arrows .right-arrow::before {
+    background-color: var(--main-color);
+}
+
+/* #endregion featured products */
