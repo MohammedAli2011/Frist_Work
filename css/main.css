@@ -406,6 +406,7 @@ a {
     width: 290px;
     left: -15px;
     border-color: var(--border-color);
+    transition: var(--main-transition) ease-in-out all;
 }
 
 .featured-products .product .product-content .img {

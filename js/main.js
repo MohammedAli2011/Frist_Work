@@ -246,9 +246,23 @@ setInterval(() => {
 
 // #endregion new collections
 
-// #endregion new collections
+// #region featured products
+let productsBox = document.querySelector(".featured-products .products-box");
+let leftAngle = document.getElementsByClassName("left-arrow")[1];
+let rightAngle = document.getElementsByClassName("right-arrow")[1];
+// code
 
-let ddd = document.getElementsByClassName("product");
+leftAngle.addEventListener("click", () => {
+    let product = productsBox.firstElementChild;
+    productsBox.removeChild(product);
+    productsBox.appendChild(product);
+});
 
-document.getElementsByClassName("products-box")[1].removeChild(ddd[0])
-document.getElementsByClassName("products-box")[1].prepend(ddd[0])
+rightAngle.addEventListener("click", () => {
+    let product = productsBox.lastElementChild;
+    console.log(product);
+    productsBox.removeChild(product);
+    productsBox.prepend(product);
+});
+
+// #endregion featured products
