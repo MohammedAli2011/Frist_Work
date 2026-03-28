@@ -111,7 +111,7 @@ document.getElementsByClassName("card")[0].addEventListener("mouseover", () => {
 });
 
 document.getElementsByClassName("card")[0].addEventListener("mouseout", () => {
-    document.getElementsByClassName("icon-search")[0].style.background = "#fff";
+    document.getElementsByClassName("icon-search")[0].style.background = "transparent";
     document.getElementsByClassName("icon-search")[0].style.color = "var(--bs-dark)";
 });
 
@@ -133,7 +133,7 @@ document.getElementsByClassName("card")[1].addEventListener("mouseover", () => {
 });
 
 document.getElementsByClassName("card")[1].addEventListener("mouseout", () => {
-    document.getElementsByClassName("icon-account")[0].style.background = "#fff";
+    document.getElementsByClassName("icon-account")[0].style.background = "transparent";
     document.getElementsByClassName("icon-account")[0].style.color = "var(--bs-dark)";
 });
 
@@ -248,8 +248,8 @@ setInterval(() => {
 
 // #region featured products
 let productsBox = document.querySelector(".featured-products .products-box");
-let leftAngle = document.getElementsByClassName("left-arrow")[1];
-let rightAngle = document.getElementsByClassName("right-arrow")[1];
+let leftAngle = document.querySelector(".featured-products .left-arrow");
+let rightAngle = document.querySelector(".featured-products .right-arrow");
 // code
 
 leftAngle.addEventListener("click", () => {
@@ -263,6 +263,27 @@ rightAngle.addEventListener("click", () => {
     console.log(product);
     productsBox.removeChild(product);
     productsBox.prepend(product);
+});
+
+// #endregion featured products
+
+// #region featured products
+let sProductsBox = document.querySelector(".sale-products .products-box");
+let sLeftAngle = document.querySelector(".sale-products .left-arrow");
+let sRightAngle = document.querySelector(".sale-products .right-arrow");
+// code
+
+sLeftAngle.addEventListener("click", () => {
+    let product = sProductsBox.firstElementChild;
+    sProductsBox.removeChild(product);
+    sProductsBox.appendChild(product);
+});
+
+sRightAngle.addEventListener("click", () => {
+    let product = sProductsBox.lastElementChild;
+    console.log(product);
+    sProductsBox.removeChild(product);
+    sProductsBox.prepend(product);
 });
 
 // #endregion featured products

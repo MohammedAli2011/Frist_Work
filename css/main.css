@@ -18,11 +18,12 @@ body {
     margin: 0 !important;
     padding: 0 !important;
     height: 9000px;
-    background: #000;
+    background: #00f;
 }
 
 a {
     text-decoration: none !important;
+    color: inherit;
 }
 
 .active {
@@ -401,57 +402,82 @@ a {
 
 /* #endregion new collection */
 
-/* #region featured products */
-.featured-products .product {
+/* #region featured products , sale products */
+.featured-products .product,
+.sale-products .product {
     width: 290px;
     left: -15px;
     border-color: var(--border-color);
     transition: var(--main-transition) ease-in-out all;
 }
 
-.featured-products .product .product-content .img {
+.featured-products .product .product-content .img,
+.sale-products .product .product-content .img {
     background-color: var(--third-bg-color) !important;
 }
 
-.featured-products .product .product-content .img img {
+.featured-products .product .product-content .img img,
+.sale-products .product .product-content .img img {
     transition: var(--main-transition) ease all !important;
 }
 
-.featured-products .product .product-content:hover .img img {
+.featured-products .product .product-content:hover .img img,
+.sale-products .product .product-content:hover .img img {
     transform: scale(1.2) rotate(12deg) !important;
 }
 
-.featured-products .product .product-content .description h5 {
+.featured-products .product .product-content .description h5,
+.sale-products .product .product-content .description h5 {
     transition: var(--main-transition) ease all !important;
 }
 
-.featured-products .product .product-content:hover .description h5 {
+.featured-products .product .product-content:hover .description h5,
+.sale-products .product .product-content:hover .description h5 {
     color: var(--main-color);
 }
 
-.featured-products .product .product-content .description p {
+.featured-products .product .product-content .description p,
+.sale-products .product .product-content .description p {
     color: var(--main-color) !important;
     transition: var(--main-transition) ease all !important;
 }
 
-.featured-products .product .product-content:hover .description p {
+.featured-products .product .product-content:hover .description p,
+.sale-products .product .product-content:hover .description p {
     color: var(--bs-dark);
 }
 
 .featured-products .arrows .left-arrow,
-.featured-products .arrows .right-arrow {
+.sale-products .arrows .left-arrow,
+.featured-products .arrows .right-arrow,
+.sale-products .arrows .right-arrow {
     cursor: pointer;
     transition: var(--main-transition) all ease-in-out;
 }
 
 .featured-products .arrows .left-arrow:hover,
-.featured-products .arrows .right-arrow:hover {
+.sale-products .arrows .left-arrow:hover,
+.featured-products .arrows .right-arrow:hover,
+.sale-products .arrows .right-arrow:hover {
     color: #fff;
 }
 
 .featured-products .arrows .left-arrow::before,
-.featured-products .arrows .right-arrow::before {
+.sale-products .arrows .left-arrow::before,
+.featured-products .arrows .right-arrow::before,
+.sale-products .arrows .right-arrow::before {
     background-color: var(--main-color);
 }
 
 /* #endregion featured products */
+
+/* #region footer */
+    footer .content a  {
+        color: var(--secondery-color);
+        transition: var(--main-transition);
+    }
+
+    footer .content a:hover  {
+        color: var(--main-color);
+    }
+/* #endregion footer */
