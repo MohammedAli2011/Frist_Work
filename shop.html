@@ -24,16 +24,64 @@
 <body>
 
 
-    <!-- start landing -->
+<!--#region start landing-->
+<div class="landing w-100 vh-100">
 
+    <div class="otherHtmlLanding">
+        <img src="img/assets/images/page-banner.jpg" class="w-100 vh-100" alt=""/>
 
-    <script src="js/all.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+        <div class="container">
+            <div class="text position-absolute top-50 p-5 text-white">
+                <h1 class="">Welcome Every Body To<br>Our Big Shop</h1>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--#endregion start landing-->
+
+<!--#region shop-->
+<div class="shop py-5">
+    <div class="container">
+        <div class="header w-100 h-100 d-flex justify-content-between align-items-center">
+
+            <div class="results fs-4">12 Product Found Of 30</div>
+
+            <div class="search fs-4">
+                <input class="search-bar" type="text" name="search-bar" placeholder="Search..."/>
+                <a class="search-bar-link" href=""><i class="fa fa-search"></i></a>
+            </div>
+
+            <div class="view">
+                <i class="fa-solid fa-table-cells"></i>
+                <i class="fa-solid fa-list"></i>
+            </div>
+
+            <div class="sort">
+                Sort By:
+                <select name="" id="">
+                    <option value="">Default</option>
+                    <option value="">Price Low To High</option>
+                    <option value="">Price High To Low</option>
+                    <option value="">Best Selling</option>
+                    <option value="">Top Rated</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="options"></div>
+        <div class="products"></div>
+    </div>
+</div>
+<!--#endregion shop-->
+
+<script src="js/all.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
