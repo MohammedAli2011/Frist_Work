@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <!-- fontAwesome link -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- animateLibrary link -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- hoverLibrary link -->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- mainStyleFile link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+<!--#region start landing-->
+<div class="landing w-100 vh-100">
+
+    <div class="otherHtmlLanding">
+        <img src="img/assets/images/page-banner.jpg" class="w-100 vh-100" alt=""/>
+
+        <div class="container">
+            <div class="text position-absolute top-50 p-5 text-white">
+                <h1 class="">Welcome Every Body To<br>Our Big Shop</h1>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--#endregion start landing-->
+
+<!--#region shop-->
+<div class="shop py-5">
+
+    <div class="container">
+
+        <div class="header w-100 h-100 d-flex justify-content-between align-items-center">
+
+            <div class="results fs-4">12 Product Found Of 30</div>
+
+            <div class="search w-25">
+
+                <form class="d-flex fs-4 w-100 position-relative" role="search">
+
+                    <input class="form-control search-bar p-3 pe-5 w-100 btn-outline-primary" type="search"
+                           placeholder="Search"
+                           aria-label="Search"/>
+
+                    <a class="position-absolute rounded-end d-flex justify-content-center align-items-center top-50 p-2 border h-100 end-0"
+                       type="submit" href="" title="search">
+                        <i class="fa-solid fa-search fs-5"></i>
+                    </a>
+
+                </form>
+
+            </div>
+
+            <div class="view">
+
+                <button class="btn btn-dark p-0 bg-white">
+                    <i class="fa-solid fa-table-cells fs-4 p-2 fw-lighter text-warning"></i>
+                </button>
+
+                <i class="fa-solid fa-list"></i>
+
+            </div>
+
+            <div class="sort">
+
+                Sort By:
+
+                <select name="" id="">
+
+                    <option value="">Default</option>
+
+                    <option value="">Price Low To High</option>
+
+                    <option value="">Price High To Low</option>
+
+                    <option value="">Best Selling</option>
+
+                    <option value="">Top Rated</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="options"></div>
+
+        <div class="products"></div>
+
+    </div>
+
+</div>
+<!--#endregion shop-->
+
+<script src="js/all.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
