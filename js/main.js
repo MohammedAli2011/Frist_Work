@@ -255,7 +255,7 @@ links.forEach((e) => {
         e.classList.remove("hvr-underline-from-center");
         e.classList.add("active");
     }
-    ;
+
 });
 
 links2.forEach((e) => {
@@ -266,31 +266,33 @@ links2.forEach((e) => {
             document.getElementsByClassName("icon-account")[0].style.background = "var(--bg-color) !important";
             document.getElementsByClassName("icon-account")[0].style.color = "var(--main-color) !important";
         }
-        ;
+
     }
-    ;
-});
+
+})
 
 //search bar
+let searchIcon = document.getElementsByClassName("icon-search")[0];
+let accountIcon = document.getElementsByClassName("icon-account")[0];
 
 document.getElementsByClassName("card")[0].addEventListener("mouseover", () => {
-    document.getElementsByClassName("icon-search")[0].style.background = "var(--bg-color) !important";
-    document.getElementsByClassName("icon-search")[0].style.color = "var(--main-color) !important";
+    searchIcon.style.background = "var(--bg-color) !important";
+    searchIcon.style.color = "var(--main-color) !important";
 });
 
 document.getElementsByClassName("card")[0].addEventListener("mouseout", () => {
-    document.getElementsByClassName("icon-search")[0].style.background = "transparent";
-    document.getElementsByClassName("icon-search")[0].style.color = "var(--bs-dark)";
+    searchIcon.style.background = "transparent";
+    searchIcon.style.color = "var(--bs-dark)";
 });
 
 document.getElementsByClassName("search-bar")[0].addEventListener("click", () => {
-    document.getElementsByClassName("icon-search")[0].style.background = "var(--bg-color) !important";
-    document.getElementsByClassName("icon-search")[0].style.color = "var(--main-color) !important";
+    searchIcon.style.background = "var(--bg-color) !important";
+    searchIcon.style.color = "var(--main-color) !important";
 });
 
 document.getElementsByClassName("search-bar")[0].addEventListener("keyup", () => {
-    document.getElementsByClassName("icon-search")[0].style.background = "var(--bg-color) !important";
-    document.getElementsByClassName("icon-search")[0].style.color = "var(--main-color) !important";
+    searchIcon.style.background = "var(--bg-color) !important";
+    searchIcon.style.color = "var(--main-color) !important";
 });
 
 document.getElementsByClassName("search-bar")[0].addEventListener("keyup", () => {
@@ -300,18 +302,18 @@ document.getElementsByClassName("search-bar")[0].addEventListener("keyup", () =>
 //account icon links
 
 document.getElementsByClassName("card")[1].addEventListener("mouseover", () => {
-    document.getElementsByClassName("icon-account")[0].style.background = "var(--bg-color) !important";
-    document.getElementsByClassName("icon-account")[0].style.color = "var(--main-color) !important";
+    accountIcon.style.background = "var(--bg-color) !important";
+    accountIcon.style.color = "var(--main-color) !important";
 });
 
 document.getElementsByClassName("card")[1].addEventListener("mouseout", () => {
-    document.getElementsByClassName("icon-account")[0].style.background = "transparent";
-    document.getElementsByClassName("icon-account")[0].style.color = "var(--bs-dark)";
+    accountIcon.style.background = "transparent";
+    accountIcon.style.color = "var(--bs-dark)";
 });
 
 document.getElementsByClassName("account-collapse")[0].addEventListener("click", () => {
-    document.getElementsByClassName("icon-account")[0].style.background = "var(--bg-color) !important";
-    document.getElementsByClassName("icon-account")[0].style.color = "var(--main-color) !important";
+    accountIcon.style.background = "var(--bg-color) !important";
+    accountIcon.style.color = "var(--main-color) !important";
 });
 
 //#endregion nav links access
@@ -417,7 +419,7 @@ if (window.location.href.includes("home.html")) {
         if (timeDef === 0) {
             clearInterval();
         }
-        ;
+
     }, 1000);
 
 //#endregion new collections
