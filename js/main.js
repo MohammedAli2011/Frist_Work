@@ -254,7 +254,7 @@ let links = [document.getElementsByClassName("nav-link")[0], document.getElement
 let links2 = [document.getElementsByClassName("acount-link")[0], document.getElementsByClassName("acount-link")[1], document.getElementsByClassName("acount-link")[2], document.getElementsByClassName("icon-heart")[0], document.getElementsByClassName("icon-shop")[0]];
 
 links.forEach((e) => {
-    if (window.location.href === e.href) {
+    if (window.location.href.includes(e.href)) {
         e.classList.remove("hvr-underline-from-center");
         e.classList.add("active");
     }
@@ -262,7 +262,7 @@ links.forEach((e) => {
 });
 
 links2.forEach((e) => {
-    if (window.location.href === e.href) {
+    if (window.location.href.includes(e.href)) {
         e.style.background = "var(--bg-color) !important";
         e.style.color = "var(--main-color) !important";
         if (e.innerHTML === "My Account" || e.innerHTML === "Sign In" || e.innerHTML === "Check Out") {

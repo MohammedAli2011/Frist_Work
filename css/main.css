@@ -38,6 +38,16 @@ a {
     left: 0;
 }
 
+.btn-active {
+    background-color: var(--bg-color) !important;
+    color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+.btn-active svg {
+    color: var(--main-color) !important;
+}
+
 .otherHtmlLanding .text {
     transform: translateY(-50%);
 }
@@ -476,6 +486,10 @@ a {
 /*#endregion index.html*/
 
 /*#region shop.html*/
+
+/*#region shop.html's header*/
+
+/*#region shop.html's header's search*/
 .shop .container .header .search .search-bar {
     border: 1px solid var(--main-color);
     transition: var(--main-transition) all ease-in-out;
@@ -497,6 +511,24 @@ a {
 .shop .container .header .search a:hover {
     background-color: var(--bg-color) !important;
 }
+
+/*#endregion shop.html's header's search*/
+
+/*#region shop.html's header's view*/
+
+.shop .container .header .view button:hover {
+    background-color: var(--bg-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+.shop .container .header .view button:hover svg {
+    color: var(--main-color) !important;
+}
+
+/*#endregion shop.html's header's view*/
+
+/*#endregion shop.html's header*/
+
 
 /*#endregion shop.html*/
 
