@@ -168,7 +168,7 @@ a {
 
 /*#endregion navbar*/
 
-/*#region home.html*/
+/*#region index.html*/
 /*#region landing*/
 .landing {
     background-color: #eee5ff;
@@ -473,7 +473,7 @@ a {
 }
 
 /*#endregion featured products*/
-/*#endregion home.html*/
+/*#endregion index.html*/
 
 /*#region shop.html*/
 .shop .container .header .search .search-bar {
@@ -496,7 +496,6 @@ a {
 
 .shop .container .header .search a:hover {
     background-color: var(--bg-color) !important;
-    color: var(--bs-dark) !important;
 }
 
 /*#endregion shop.html*/

@@ -55,7 +55,7 @@
 
                     <input class="form-control search-bar p-3 pe-5 w-100 btn-outline-primary" type="search"
                            placeholder="Search"
-                           aria-label="Search"/>
+                           aria-label="Search" name="form-control"/>
 
                     <a class="position-absolute rounded-end d-flex justify-content-center align-items-center top-50 p-2 border h-100 end-0"
                        type="submit" href="" title="search">
@@ -66,30 +66,30 @@
 
             </div>
 
-            <div class="view">
+            <div class="view d-flex align-items-center justify-content-between">
 
-                <button class="btn btn-dark p-0 bg-white">
-                    <i class="fa-solid fa-table-cells fs-4 p-2 fw-lighter text-warning"></i>
+                <button class="btn btn-warning me-3 p-0 bg-white d-flex align-items-center">
+                    <i class="fa-solid fa-table-cells fs-5 p-2 fw-lighter text-dark"></i>
                 </button>
-
-                <i class="fa-solid fa-list"></i>
-
+                <button class="btn btn-warning ms-3 p-0 bg-white d-flex align-items-center">
+                    <i class="fa-solid fa-list fs-5 p-2 fw-lighter text-dark"></i>
+                </button>
             </div>
 
-            <div class="sort">
+            <div class="sort d-flex">
 
                 Sort By:
 
-                <select name="" id="">
+                <select class="form-select rounded-pill border-warning" name="" id="">
 
-                    <option value="">Default</option>
-
+                    <option class="text-warning border border-warning " value="">Default</option>
+                    <hr class="">
                     <option value="">Price Low To High</option>
-
+                    <hr class="text-warning">
                     <option value="">Price High To Low</option>
-
+                    <hr class="text-warning">
                     <option value="">Best Selling</option>
-
+                    <hr class="text-warning">
                     <option value="">Top Rated</option>
 
                 </select>

@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="41538bed-bdf9-40f9-9e86-b054d0d64dce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +18,7 @@
   <component name="CopilotChats">
     <option name="panelChat">
       <chat>
-        <option name="activeSessionId" value="74e6ee1a-b162-42ff-a05b-4e68667b3bd3" />
+        <option name="activeSessionId" value="7cae526f-2c73-43e1-99c2-0f2969582c3e" />
         <option name="sessions">
           <session>
             <option name="chatType" value="PANEL" />
@@ -57,6 +59,65 @@
     <commands />
     <urls />
   </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000000000000249" />
+      <entry key="MS500" value="1.0024329843443232" />
+      <entry key="S2" value="1.3613126003998812" />
+      <entry key="S5" value="2.059405249674004" />
+      <entry key="S10" value="2.650432383759488" />
+      <entry key="S30" value="3.4146114221698185" />
+      <entry key="S60" value="3.918505450494111" />
+      <entry key="M2" value="5.266620764617418" />
+      <entry key="M5" value="12.520107099272662" />
+      <entry key="M10" value="25.3161345399947" />
+      <entry key="M15" value="35.811906128838515" />
+      <entry key="M30" value="56.56451233230886" />
+      <entry key="H1" value="75.48873895702424" />
+      <entry key="H2" value="88.8466228133184" />
+      <entry key="H4" value="96.87575941618238" />
+      <entry key="D1" value="104.39602762117197" />
+      <entry key="W1" value="105.76872008094382" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="4.297203420315525E-64" />
+      <entry key="MS500" value="2.1214714059551806E-13" />
+      <entry key="S2" value="6.786710057823911E-4" />
+      <entry key="S5" value="0.05403357696464099" />
+      <entry key="S10" value="0.23245405047871603" />
+      <entry key="S30" value="0.6305928643054862" />
+      <entry key="S60" value="0.9431800196229917" />
+      <entry key="M2" value="1.436005634706483" />
+      <entry key="M5" value="2.360329356741697" />
+      <entry key="M10" value="3.5229067546371917" />
+      <entry key="M15" value="4.4205306613530295" />
+      <entry key="M30" value="6.002719690377034" />
+      <entry key="H1" value="7.252327243380643" />
+      <entry key="H2" value="8.051300556585762" />
+      <entry key="H4" value="8.505053979681252" />
+      <entry key="D1" value="8.914472007953963" />
+      <entry key="W1" value="8.987704916920427" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8235910172675943" />
+      <entry key="MS500" value="0.9642786926423422" />
+      <entry key="S2" value="1.3487852579493074" />
+      <entry key="S5" value="2.0897495646621547" />
+      <entry key="S10" value="2.84040869754964" />
+      <entry key="S30" value="4.003240339169897" />
+      <entry key="S60" value="4.81227135382113" />
+      <entry key="M2" value="6.641501030824519" />
+      <entry key="M5" value="14.810870136086981" />
+      <entry key="M10" value="28.765013105684112" />
+      <entry key="M15" value="40.16068126996558" />
+      <entry key="M30" value="62.51016539216199" />
+      <entry key="H1" value="82.7036625451536" />
+      <entry key="H2" value="96.87628875473779" />
+      <entry key="H4" value="105.36914801837065" />
+      <entry key="D1" value="113.30842636925286" />
+      <entry key="W1" value="114.75612550002447" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4,
   &quot;fromUser&quot;: false
@@ -66,37 +127,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "code.cleanup.on.save": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.23567.141" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.25134.101" />
       </set>
     </attachedChunks>
   </component>
@@ -112,7 +173,11 @@
       <workItem from="1778417681988" duration="1313000" />
       <workItem from="1778568474025" duration="841000" />
       <workItem from="1778569338102" duration="5771000" />
-      <workItem from="1778668727521" duration="1227000" />
+      <workItem from="1778668727521" duration="3845000" />
+      <workItem from="1781448547061" duration="942000" />
+      <workItem from="1781449791048" duration="2255000" />
+      <workItem from="1781512203265" duration="5054000" />
+      <workItem from="1781611659397" duration="1722000" />
     </task>
     <servers />
   </component>

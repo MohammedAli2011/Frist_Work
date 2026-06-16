@@ -14,7 +14,7 @@ let navbar = `    <!-- start navbar -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-center" aria-current="page" href="home.html">Home</a>
+                        <a class="nav-link hvr-underline-from-center" aria-current="page" href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -80,6 +80,7 @@ let navbar = `    <!-- start navbar -->
 ;
 
 //#region footer
+
 let footer = `<!--#region footer -->
 <footer class="bg-dark text-white">
 
@@ -99,7 +100,7 @@ let footer = `<!--#region footer -->
 
                     <div class="left-side d-flex justify-content-center align-items-start flex-column">
 
-                        <a href="home.html" class="link w-100 fw-bold p-1 hvr-forward">Home</a>
+                        <a href="index.html" class="link w-100 fw-bold p-1 hvr-forward">Home</a>
 
                         <a href="shop.html" class="link w-100 fw-bold p-1 hvr-forward">Shop</a>
 
@@ -188,15 +189,15 @@ let footer = `<!--#region footer -->
 
                 <div class="links-box w-100 d-flex flex-column justify-content-between align-items-center p-3">
 
-                    <a href="" class="link w-100 fw-bold p-1 hvr-forward">My Account</a>
+                    <a href="my_account.html" class="link w-100 fw-bold p-1 hvr-forward">My Account</a>
 
-                    <a href="" class="link w-100 fw-bold p-1 hvr-forward">Sign In</a>
+                    <a href="sign_in.html" class="link w-100 fw-bold p-1 hvr-forward">Sign In</a>
 
                     <a href="" class="link w-100 fw-bold p-1 hvr-forward">Sign Up</a>
 
-                    <a href="" class="link w-100 fw-bold p-1 hvr-forward">Check Out</a>
+                    <a href="check_out.html" class="link w-100 fw-bold p-1 hvr-forward">Check Out</a>
 
-                    <a href="" class="link w-100 fw-bold p-1 hvr-forward">FAQ</a>
+                    <a href="faq.html" class="link w-100 fw-bold p-1 hvr-forward">FAQ</a>
 
 
                 </div>
@@ -240,16 +241,18 @@ let copyright = `<!--#region copyright -->
     </div>
 
 </div>
-<!--#endregion copyright -->`
+<!--#endregion copyright -->`;
+
 //#endregion footer
 
 document.body.innerHTML = navbar + document.body.innerHTML + footer + copyright;
 
-let links = [document.getElementsByClassName("nav-link")[0], document.getElementsByClassName("nav-link")[1], document.getElementsByClassName("nav-link")[2], document.getElementsByClassName("nav-link")[3], document.getElementsByClassName("nav-link")[4]];
-let links2 = [document.getElementsByClassName("acount-link")[0], document.getElementsByClassName("acount-link")[1], document.getElementsByClassName("acount-link")[2], document.getElementsByClassName("icon-heart")[0], document.getElementsByClassName("icon-shop")[0]];
 
 //#region nav links access
 //pages links
+let links = [document.getElementsByClassName("nav-link")[0], document.getElementsByClassName("nav-link")[1], document.getElementsByClassName("nav-link")[2], document.getElementsByClassName("nav-link")[3], document.getElementsByClassName("nav-link")[4]];
+let links2 = [document.getElementsByClassName("acount-link")[0], document.getElementsByClassName("acount-link")[1], document.getElementsByClassName("acount-link")[2], document.getElementsByClassName("icon-heart")[0], document.getElementsByClassName("icon-shop")[0]];
+
 links.forEach((e) => {
     if (window.location.href === e.href) {
         e.classList.remove("hvr-underline-from-center");
@@ -320,9 +323,9 @@ document.getElementsByClassName("account-collapse")[0].addEventListener("click",
 
 //#endregion navbar & footer
 
-//#region home.html
+//#region index.html
 
-if (window.location.href.includes("home.html")) {
+if (window.location.href.includes("index.html")) {
 //#region landing
 
     let leftArrow = document.getElementsByClassName("arrow-left")[0];
@@ -467,7 +470,7 @@ if (window.location.href.includes("home.html")) {
 //#endregion featured products
 }
 
-//#endregion home.html
+//#endregion index.html
 
 //#region shop.html
 if (window.location.href.includes("shop.html")) {
