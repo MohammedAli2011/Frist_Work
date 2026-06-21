@@ -516,6 +516,14 @@ a {
 
 /*#region shop.html's header's view*/
 
+.shop .container .header .view button {
+    transition: var(--main-transition) all ease-in-out;
+}
+
+.shop .container .header .view button svg {
+    transition: var(--main-transition) all ease-in-out;
+}
+
 .shop .container .header .view button:hover {
     background-color: var(--bg-color) !important;
     border-color: var(--main-color) !important;
@@ -526,6 +534,24 @@ a {
 }
 
 /*#endregion shop.html's header's view*/
+
+/*#region shop.html's header's sort*/
+
+.shop .container .header .sort .form-select {
+    transition: var(--main-transition) all ease-in-out;
+}
+
+.shop .container .header .sort .form-select:focus {
+    background-color: var(--bg-color) !important;
+    color: var(--main-color) !important;
+    box-shadow: none !important;
+}
+
+.shop .container .header .sort .form-select .select {
+    transition: var(--main-transition) all ease-in-out;
+}
+
+/*#endregion shop.html's header's sort*/
 
 /*#endregion shop.html's header*/
 
